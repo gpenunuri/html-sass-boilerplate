@@ -1,0 +1,22 @@
+{
+  "name": "html-sass-boilerplate",
+  "version": "1.0.0",
+  "description": "A boilerplate that uses HTML & SASS to start a simple website quickly.",
+  "main": "index.html",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gpenunuri/html-sass-boilerplate.git"
+  },
+  "author": "German Peñuñuri www.gpenunuri.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gpenunuri/html-sass-boilerplate/issues"
+  },
+  "homepage": "https://github.com/gpenunuri/html-sass-boilerplate#readme",
+  "devDependencies": {
+    "node-sass": "^5.0.0"
+  }
+}
