@@ -7,4 +7,15 @@
 @import "base/typography";
 @import "base/utilities";
 
+@import "components/btn";
+@import "components/contact-widget";
+@import "components/intro";
+@import "components/theme-switch";
+
+@import "layout/footer";
 @import "layout/grid";
+@import "layout/header";
+@import "layout/hero";
+@import "layout/navigation";
+
+@import "pages/home";

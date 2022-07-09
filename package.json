@@ -1,10 +1,10 @@
 {
-  "name": "html-sass-boilerplate",
+  "name": "gpenunuri.com",
   "version": "1.0.0",
-  "description": "A boilerplate that uses HTML & SASS to start a simple website quickly.",
+  "description": "gpenunuri.com webpage",
   "main": "index.html",
   "scripts": {
-    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+    "compile:sass": "node-sass sass/main.scss assets/css/style.css -w"
   },
   "repository": {
     "type": "git",

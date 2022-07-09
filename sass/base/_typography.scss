@@ -1,0 +1,11 @@
+.link {
+  text-decoration: none;
+  font-family: CamingoCode;
+  font-size: $default-font-size;
+
+  &:hover {
+  }
+  &--blue {
+    color: $color-secondary-blue;
+  }
+}

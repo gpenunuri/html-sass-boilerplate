@@ -1,0 +1,37 @@
+.intro {
+  background: url("/assets/img/intro-bg.png");
+  background-size: cover;
+  background-position: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+
+  &-slider {
+    background: $color-primary-light;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateY(100%);
+  }
+
+  &-text {
+    color: $color-primary-light;
+    font-size: 5.8rem;
+    font-weight: bold;
+    background: transparent;
+    overflow: hidden;
+  }
+
+  &-text__span {
+    display: inline-block;
+    transform: translateY(100%);
+  }
+}

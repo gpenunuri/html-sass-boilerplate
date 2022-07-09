@@ -1,0 +1,25 @@
+.theme-switch-widget {
+  position: fixed;
+  bottom: 4rem;
+  right: 4rem;
+}
+
+.switch-input {
+  display: none;
+}
+
+.switch-icon {
+  font-size: 3.2rem;
+  transition: all 0.2s ease-out;
+
+  &:hover {
+    cursor: pointer;
+    font-size: 3.4rem;
+  }
+
+  &--sun {
+  }
+
+  &--moon {
+  }
+}

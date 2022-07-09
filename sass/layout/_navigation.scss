@@ -1,0 +1,123 @@
+.navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &--xs {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+    .navigation__nav {
+      display: inline-block;
+    }
+
+    .navigation__toggle {
+      position: absolute;
+      right: 2rem;
+      top: 3.6rem;
+    }
+  }
+
+  &__nav {
+    @include respond(phone) {
+      display: none;
+    }
+  }
+
+  &__toggle {
+    margin-top: 1.6rem;
+    display: none;
+
+    @include respond(phone) {
+      display: inline-block;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+
+    input {
+      display: none;
+    }
+    input {
+      display: none;
+    }
+
+    input:checked + label span {
+      background-color: transparent;
+    }
+
+    input:checked + label span::before {
+      top: 0;
+      transform: rotate(135deg);
+    }
+
+    input:checked + label span::after {
+      top: 0;
+      transform: rotate(-135deg);
+    }
+
+    label {
+      text-align: center;
+    }
+
+    span {
+      position: relative;
+      cursor: pointer;
+
+      &,
+      &::before,
+      &::after {
+        width: 5rem;
+        height: 4px;
+        background-color: $color-primary-light;
+        display: inline-block;
+      }
+
+      &::before,
+      &::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        transition: all 0.6s;
+      }
+
+      &::before {
+        top: -1.5rem;
+      }
+      &::after {
+        top: 1.5rem;
+      }
+    }
+  }
+
+  &__list {
+    display: flex;
+    list-style: none;
+    @include respond(phone) {
+      margin: 0 auto;
+      display: none;
+    }
+  }
+
+  &__list--xs {
+    display: inline-block;
+    text-align: center;
+    margin: 8rem 0;
+
+    .navigation__item {
+      margin: 6rem 0;
+    }
+  }
+
+  &__item {
+    margin: 0 2rem;
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+  }
+}

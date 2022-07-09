@@ -1,0 +1,29 @@
+.btn {
+  &,
+  &:link,
+  &:visited {
+    text-decoration: none;
+    display: inline-block;
+    border-radius: 5px;
+    border: none;
+    font-size: $default-font-size;
+    font-family: CamingoCode;
+    font-weight: bold;
+    cursor: pointer;
+    color: $color-primary-light;
+    padding: 1.6rem 3.2rem;
+  }
+
+  &:active,
+  &:focus {
+    outline: none;
+  }
+
+  &--blue {
+    background-color: $color-secondary-blue;
+  }
+
+  &--red {
+    background-color: $color-secondary-blue;
+  }
+}

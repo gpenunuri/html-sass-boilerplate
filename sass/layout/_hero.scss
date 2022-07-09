@@ -1,0 +1,46 @@
+.hero {
+  display: flex;
+  padding: 0 5rem;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+
+  @include respond(tab-port) {
+    flex-direction: column-reverse;
+    justify-content: center;
+  }
+
+  &__name {
+    color: $color-primary-light;
+    font-size: 2rem;
+
+    span {
+      color: $color-secondary-blue;
+    }
+  }
+
+  &__title {
+    color: $color-primary-light;
+    font-size: 6rem;
+    font-weight: bold;
+    line-height: 1.2;
+  }
+
+  &__subtitle {
+    color: $color-primary-light;
+    font-size: 2rem;
+  }
+
+  &__img-box {
+    max-width: 20rem;
+    margin: 1.5rem;
+
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
+  }
+
+  &__img {
+    width: 100%;
+  }
+}
